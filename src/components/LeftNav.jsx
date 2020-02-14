@@ -3,8 +3,13 @@ import {Link} from 'react-router-dom';
 
 
 function LeftNav(){
+
+const nav= {
+  
+}
+
   return(
-    <div className="nav">
+    <div style={nav}>
       <table className="nav-links">
         <tr>
           <Link to='/home' className="navLink">Home</Link>

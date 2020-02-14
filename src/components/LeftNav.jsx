@@ -4,17 +4,27 @@ import {Link} from 'react-router-dom';
 
 function LeftNav(){
 
-const nav= {
-  
-}
+  const navLink= {
+    float: 'left',
+    margin: '5px'
+  }
 
   return(
-    <div style={nav}>
+    <div>
       <table className="nav-links">
         <tr>
-          <Link to='/home' className="navLink">Home</Link>
-          <Link to='/aboutUs' className="navLink">About us</Link>
-          <Link to='/' className="navLink">Upcoming Events</Link>
+          <div style={navLink}>
+            <Link to='/home'>Home</Link>
+          </div>
+
+          <div style={navLink}>
+            <Link to='/aboutUs' className="navLink">About us</Link>
+          </div>
+
+          <div style={navLink}>
+            <Link to='/' className="navLink">Upcoming Events</Link>
+          </div>
+
         </tr>
       </table>
     </div>

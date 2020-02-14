@@ -1,10 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Home(){
   return(
     <div>
       <div>
         <h2>BREWS</h2>
+        <Link to='./NewKombucha'>Add a Brew</Link>
       </div>
 
 

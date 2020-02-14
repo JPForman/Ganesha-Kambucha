@@ -7,6 +7,7 @@ import './Header.css';
 
 function Header(){
   return(
+    <div>
     <div className='header'>
       <div className='leftNav'>
         <LeftNav />
@@ -19,6 +20,7 @@ function Header(){
       <div className='rightNav'>
         <RightNav />
       </div>
+    </div>
     </div>
   );
 }

@@ -1,11 +1,15 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import LeftNav from './LeftNav'
 
 function Header(){
   return(
     <div>
-      <p>Header</p>
+      <LeftNav />
+      <Logo />
+
     </div>
-  )
+  );
 }
 
 export default Header;

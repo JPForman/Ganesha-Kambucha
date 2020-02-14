@@ -6,7 +6,13 @@ function LeftNav(){
 
   const navLink= {
     float: 'left',
-    margin: '5px'
+    margin: '5px',
+    color: 'red'
+  }
+  const link= {
+    color: 'black',
+    textShadow: '1px 1px darkgrey',
+    fontWeight: 'bold'
   }
 
   return(
@@ -14,15 +20,11 @@ function LeftNav(){
       <table className="nav-links">
         <tr>
           <div style={navLink}>
-            <Link to='/home'>Home</Link>
+            <Link to='/' style={link}>Home</Link>
           </div>
 
           <div style={navLink}>
-            <Link to='/aboutUs' className="navLink">About us</Link>
-          </div>
-
-          <div style={navLink}>
-            <Link to='/' className="navLink">Upcoming Events</Link>
+            <Link to='/aboutUs' style={link}>About us</Link>
           </div>
 
         </tr>

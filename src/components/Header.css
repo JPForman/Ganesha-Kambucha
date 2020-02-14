@@ -1,5 +1,8 @@
 .header {
-
+  background-color: #419e5a;
+  height: 120px;
+  top: 1%;
+  margin-top: -3%;
 }
 
 .leftNav {
@@ -15,6 +18,10 @@
 }
 
 .logo {
-  color: red;
+  color: gold;
+  padding-top: 5px;
+  font-family: fantasy;
+  font-weight: bold;
+  font-size: 50px;
   text-align: center;
 }

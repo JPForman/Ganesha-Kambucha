@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 function Logo(){
   return(
-    <h1 className="logo">Ganesha Kambucha</h1>
+    <h1 className="logo">Ganesha's Kombucha House</h1>
 
   );
 

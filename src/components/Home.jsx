@@ -1,7 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from "prop-types";
+import KombuchaList from './KombuchaList';
 
-function Home(){
+
+function Home(props){
   return(
     <div>
       <div>
@@ -19,12 +22,20 @@ function Home(){
           <th>Sell a Pint</th>
           <th>Less Than a Pint Left!</th>
         </tr>
-        <tr>
-
-        </tr>
       </table>
+      <div>
+        <p>{props.name}</p>
+        <p>{props.flavor}</p>
+        <p>{props.price}</p>
+      </div>
     </div>
   );
 }
+
+Home.propTypes = {
+  name: PropTypes.string,
+  flavor: PropTypes.string,
+  price: PropTypes.string
+};
 
 export default Home;

@@ -7,12 +7,17 @@ function UpdateKombucha(){
   const updateTitle= {
   }
 
+  const update={
+
+  }
+
   const updateTitleRow={
     display: 'grid',
     gridTemplateColumns: 'auto auto auto'
   }
 
-  const update={
+  const subTitle={
+    fontFamily: 'fantasy',
   }
 
   const updateRow={
@@ -20,9 +25,13 @@ function UpdateKombucha(){
     gridTemplateColumns: 'auto auto auto',
   }
 
+  const updateBody={
+    marginTop: '100px',
+  }
+
   return(
-    <div>
-      <h1 className="logo">Update Kombucha Page</h1>
+    <div style={updateBody}>
+      <h1 style={subTitle}>Update Kombucha Page</h1>
 
         <div style={updateTitleRow}>
           <p style={updateTitle}>Name</p>
@@ -47,7 +56,7 @@ function UpdateKombucha(){
             id='Price'
             placeholder='Price'/>
           </div>
-
+          <button>Update</button>
         </form>
       </div>
 

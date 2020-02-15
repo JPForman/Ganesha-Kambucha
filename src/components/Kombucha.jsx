@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import {Link} from 'react-router-dom';
 
 function Kombucha(props){
 
@@ -12,13 +13,29 @@ function Kombucha(props){
     borderRadius: '5px',
   }
 
+  const editLink={
+    fontSize: '15px'
+  }
+
+  const prop={
+    top: '30%',
+    position: 'relative',
+  }
+
+  const sellButton={
+    marginTop: '15px',
+  }
+
   return (
       <div style={propRow}>
-        <h2><em>{props.name}</em></h2>
-        <p>{props.flavor}</p>
-        <p><em>{props.price}</em></p>
-        <button>Sell Pint</button>
-        <p>{props.pintsLeft}</p>
+        <div>
+          <h2><em>{props.name}</em></h2>
+          <Link to='/UpdateKombucha' style={editLink}>edit the brew</Link>
+        </div>
+        <p style={prop}>{props.flavor}</p>
+        <p style={prop}><em>{props.price}</em></p>
+        <button style={sellButton}>Sell Pint</button>
+        <p style={prop}>{props.pintsLeft}</p>
         <hr/>
       </div>
   );

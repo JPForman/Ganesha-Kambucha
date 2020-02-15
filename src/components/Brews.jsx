@@ -15,13 +15,15 @@ function Brews(props){
   }
 
   const sectionTitle={
-    top: '50%',
-    left: '78%',
+    top: '40%',
+    left: '70%',
     position: 'absolute',
-    fontSize: '60px',
+    fontSize: '100px',
+    fontFamily: 'fantasy',
   }
 
   const ganeshaBillboard={
+    margin: '5px',
     zIndex: '-1',
     height: '400px',
     width: 'auto',

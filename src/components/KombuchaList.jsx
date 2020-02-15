@@ -1,9 +1,9 @@
 import React from "react";
-import Home from "./Home";
+import Kombucha from "./Kombucha";
 
 function KombuchaList(){
   return (
-    <Home
+    <Kombucha
       name="3A"
       flavor="Thato and Haley"
       price="Firebase will not save record!"/>

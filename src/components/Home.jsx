@@ -23,11 +23,9 @@ function Home(props){
           <th>Less Than a Pint Left!</th>
         </tr>
       </table>
-      <div>
-        <p>{props.name}</p>
-        <p>{props.flavor}</p>
-        <p>{props.price}</p>
-      </div>
+
+      <KombuchaList />
+
     </div>
   );
 }

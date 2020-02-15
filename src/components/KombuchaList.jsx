@@ -24,18 +24,18 @@ function KombuchaList(){
     gridTemplateColumns: '20% 20% 20% 20% 20%',
     textAlign: 'center',
     backgroundColor: '#ace3af',
-
+    fontFamily: 'fantasy',
+    fontWeight: 'bold',
   }
 
   return (
     <div>
-      <hr/>
       <div style={brewHeaders}>
         <h1>Brew Name</h1>
-        <p>Flavor</p>
-        <p>Price</p>
-        <p>Sell a Pint</p>
-        <p># of Pints Left</p>
+        <h1>Flavor</h1>
+        <h1>Price</h1>
+        <h1>Sell a Pint</h1>
+        <h1># of Pints Left</h1>
       </div>
 
       {masterKombuchaList.map((kombucha,index) =>

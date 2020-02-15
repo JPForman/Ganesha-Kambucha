@@ -9,19 +9,20 @@ function Brews(props){
 
   const billboard={
     backgroundColor: '#c75d48',
-    marginTop: '90px',
+    marginTop: '87px',
     height: 'auto',
     zIndex: '-2',
     position: 'relative',
   }
 
   const sectionTitle={
-    top: '15%',
+    top: '14%',
     float: 'right',
     fontSize: '100px',
     fontFamily: 'fantasy',
     position: 'relative',
     zIndex: '-1',
+    marginRight: '35px',
   }
 
   const ganeshaBillboard={
@@ -34,9 +35,20 @@ function Brews(props){
     position: 'relative',
   }
 
-  const kombuchaRow={
-    display: 'grid',
-    gridTemplateColumns: 'auto auto auto auto auto auto'
+  const list={
+    width: '100%',
+    position: 'absolute',
+  }
+
+  const newBrew={
+    position: 'absolute',
+    color: 'lightGrey',
+    backgroundColor: 'darkGreen',
+    border: '2px solid green',
+    borderRadius: '3px',
+    padding: '3px',
+    margin: '2px',
+    top: '20%',
   }
 
   return(
@@ -46,11 +58,11 @@ function Brews(props){
           <div style={billboard}>
             <img style={ganeshaBillboard} src={GaneshaBillboard}></img>
           </div>
-          <Link to='./NewKombucha'>Add a Brew</Link>
       </div>
-
-      <KombuchaList />
-
+      <div style={list}>
+      <Link to='./NewKombucha' style={newBrew}>Add a Brew</Link>
+        <KombuchaList />
+      </div>
     </div>
   );
 }

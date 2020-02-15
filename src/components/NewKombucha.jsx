@@ -15,13 +15,17 @@ function NewKombucha(){
   const update={
   }
 
+  const updateBody={
+    marginTop: '100px',
+  }
+
   const updateRow={
     display: 'grid',
     gridTemplateColumns: 'auto auto auto',
   }
 
   return(
-    <div>
+    <div style={updateBody}>
       <h1 className="logo">New Kombucha Page</h1>
 
         <div style={updateTitleRow}>

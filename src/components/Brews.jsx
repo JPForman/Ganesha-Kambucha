@@ -11,24 +11,27 @@ function Brews(props){
     backgroundColor: '#c75d48',
     marginTop: '90px',
     height: 'auto',
-
+    zIndex: '-2',
+    position: 'relative',
   }
 
   const sectionTitle={
-    top: '40%',
-    left: '70%',
-    position: 'absolute',
+    top: '15%',
+    float: 'right',
     fontSize: '100px',
     fontFamily: 'fantasy',
+    position: 'relative',
+    zIndex: '-1',
   }
 
   const ganeshaBillboard={
     margin: '5px',
     zIndex: '-1',
-    height: '400px',
+    height: '200px',
     width: 'auto',
     backgroundColor: '#c75d48',
     border: '5px solid black',
+    position: 'relative',
   }
 
   const kombuchaRow={

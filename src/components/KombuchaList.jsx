@@ -19,6 +19,7 @@ const masterKombuchaList = [
 
 function KombuchaList(){
   const brewHeaders={
+    width: '100%',
     display: 'grid',
     gridTemplateColumns: '20% 20% 20% 20% 20%',
     textAlign: 'center',

@@ -3,7 +3,7 @@ import Kombucha from "./Kombucha";
 
 const masterKombuchaList = [
   {
-    name: "Shiv's Third Eye",
+    name: "Shiva's Third Eye",
     flavor: "Rasberry Honey Lime",
     price: "$3",
     pintsLeft: "42"

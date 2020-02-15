@@ -7,6 +7,9 @@ function Kombucha(props){
     display: 'grid',
     gridTemplateColumns: '20% 20% 20% 20% 20%',
     textAlign: 'center',
+    border: '2px solid black',
+    margin: '5px',
+    borderRadius: '5px',
   }
 
   return (
@@ -24,7 +27,8 @@ function Kombucha(props){
 Kombucha.propTypes = {
   name: PropTypes.string,
   flavor: PropTypes.string,
-  price: PropTypes.string
+  price: PropTypes.string,
+  pintsLeft: PropTypes.string
 };
 
 export default Kombucha;

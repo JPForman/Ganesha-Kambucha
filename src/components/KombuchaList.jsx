@@ -20,15 +20,17 @@ const masterKombuchaList = [
 function KombuchaList(){
   const brewHeaders={
     display: 'grid',
-    gridTemplateColumns: 'auto auto auto auto auto',
-    textAlign: 'center'
+    gridTemplateColumns: '20% 20% 20% 20% 20%',
+    textAlign: 'center',
+    backgroundColor: '#ace3af',
+
   }
 
   return (
     <div>
       <hr/>
       <div style={brewHeaders}>
-        <h2>Brew Name</h2>
+        <h1>Brew Name</h1>
         <p>Flavor</p>
         <p>Price</p>
         <p>Sell a Pint</p>

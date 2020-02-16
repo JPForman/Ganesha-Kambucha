@@ -10,9 +10,17 @@ _This is an application for a kombucha shop that has pages and routes for showin
 
 _https://github.com/JPForman/Ganesha-Kambucha.git_
 
-## Specs
+## Setup/Installation Requirements
 
-* _The application allows the user to view, update, and create kambucha kegs._
+* _$ git clone https://github.com/JPForman/Ganesha-Kambucha.git_
+
+* _$ cd Ganeshea-Kambucha_
+
+* _$ npm install_
+
+* _$ npm run start (browser will open to localhost:3000)_  
+
+  
 
 ## Routes
 
@@ -20,16 +28,12 @@ _https://github.com/JPForman/Ganesha-Kambucha.git_
 
 made at https://www.draw.io/
 
-## Setup/Installation Requirements
 
-* _Clone repository from git hub_
 
-* _cd into directory root_
 
-* _$ npm install_
+## Specs
 
-* _$ npm run start (browser will open to localhost:3000_
-
+* _The application allows the user to view, update, and create kambucha kegs._
 
 ## Known Bugs
 

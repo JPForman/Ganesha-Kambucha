@@ -10,11 +10,15 @@ _This is an application for a kombucha shop that has pages and routes for showin
 
 _https://github.com/JPForman/Ganesha-Kambucha.git_
 
-##Specs
+## Specs
 
 * _The application allows the user to view, update, and create kambucha kegs._
 
+## Routes
 
+![routes](./src/components/images/Routes.png)
+
+made at https://www.draw.io/
 
 ## Setup/Installation Requirements
 

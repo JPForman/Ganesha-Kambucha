@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import PropTypes from "prop-types";
 import KombuchaList from './KombuchaList';
 import GaneshaBillboard from './images/GaneshaBillboard.jpg'
+import Wood from './images/Wood.jpg'
 
 
 function Brews(props){
@@ -30,7 +31,6 @@ function Brews(props){
     zIndex: '-1',
     height: '200px',
     width: 'auto',
-    backgroundColor: '#c75d48',
     border: '5px solid black',
     position: 'relative',
   }
@@ -51,11 +51,20 @@ function Brews(props){
     top: '20%',
   }
 
+  const wood={
+    width: '100%',
+    height: '100%',
+    opacity: '20%',
+    float: 'left',
+    position: 'absolute',
+  }
+
   return(
     <div>
       <div>
         <h2 style={sectionTitle}>BREWS</h2>
           <div style={billboard}>
+            <img style={wood} src={Wood}></img>
             <img style={ganeshaBillboard} src={GaneshaBillboard}></img>
           </div>
       </div>

@@ -1,8 +1,21 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
+function NewKombucha(props){
+  let _name = null;
+  let _flavor = null;
+  let _price = null;
 
-function NewKombucha(){
+  function handleNewKombuchaFormSubmission(event) {
+    event.preventDefault();
+    props.onNewKombuchaCreation({name: _name.value, flavor: _flavor.value, price: _price.value});
+    _name.value = '';
+    _flavor.value = '';
+    _price.value = '';
+    props.history.push('/')
+  }
 
   const updateTitle= {
   }
@@ -33,30 +46,36 @@ function NewKombucha(){
           <p style={updateTitle}>Flavor</p>
           <p style={updateTitle}>Price</p>
         </div>
-        <form>
+        <form onSubmit={handleNewKombuchaFormSubmission}>
         <div style={updateRow}>
           <input
             style={update}
             type='text'
-            id='Name'
-            placeholder='Name of Kombucha'/>
+            id='name'
+            placeholder='Name of Kombucha'
+            ref={(input) => {_name = input;}}/>
           <input
             style={update}
             type='text'
-            id='Flavor'
-            placeholder='Flavor'/>
+            id='flavor'
+            placeholder='Flavor'
+            ref={(input) => {_flavor = input;}}/>
           <input
             style={update}
             type='text'
-            id='Price'
-            placeholder='Price'/>
+            id='price'
+            placeholder='Price'
+          ref={(input) => {_price = input;}}/>
           </div>
+          <button type='submit'>Add the Buch!</button>
 
         </form>
       </div>
-
     );
-
   }
 
-  export default NewKombucha;
+  NewKombucha.propTypes = {
+    onNewKombuchaCreation: PropTypes.func
+  };
+
+  export default withRouter(NewKombucha);

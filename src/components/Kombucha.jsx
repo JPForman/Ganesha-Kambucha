@@ -34,7 +34,7 @@ function Kombucha(props){
         </div>
         <p style={prop}>{props.flavor}</p>
         <p style={prop}><em>{props.price}</em></p>
-        <button style={sellButton}>Sell Pint</button>
+        <button style={sellButton} onClick={props.onSellPint}>Sell Pint</button>
         <p style={prop}>{props.pintsLeft}</p>
         <hr/>
       </div>

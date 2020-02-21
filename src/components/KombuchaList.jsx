@@ -4,20 +4,37 @@ import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
 
-function KombuchaList(props){
-  const brewHeaders={
-    width: '100%',
-    display: 'grid',
-    gridTemplateColumns: '20% 20% 20% 20% 20%',
-    textAlign: 'center',
-    backgroundColor: '#ace3af',
-    fontFamily: 'fantasy',
-    fontWeight: 'bold',
+const brewHeaders={
+  width: '100%',
+  display: 'grid',
+  gridTemplateColumns: '20% 20% 20% 20% 20%',
+  textAlign: 'center',
+  backgroundColor: '#ace3af',
+  fontFamily: 'fantasy',
+  fontWeight: 'bold',
+}
+
+const brews={
+  marginTop: '80px'
+}
+
+class KombuchaList extends React.Component{
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      kombuchaList: props.kombuchaList
+    }
+    this.sellPint = this.sellPint.bind(this)
   }
 
-  const brews={
-    marginTop: '80px'
-  }
+    sellPint(){
+      let newPintsLeft = this.kombucha.pintsLeft
+      newPintsLeft -= 1
+      this.setState({pintsLeft: newPintsLeft})
+    }
+
+  render(props){
 
   return (
     <div style={brews}>
@@ -30,15 +47,17 @@ function KombuchaList(props){
       </div>
       <Link to='./NewKombucha'>Add a Brew</Link>
 
-      {props.kombuchaList.map((kombucha) =>
-        <Kombucha
-        name={kombucha.name}
-        flavor={kombucha.flavor}
-        price={kombucha.price}
-        pintsLeft={kombucha.pintsLeft}/>
-      )}
+        {this.state.kombuchaList.map((kombucha) =>
+                <Kombucha
+                name={kombucha.name}
+                flavor={kombucha.flavor}
+                price={kombucha.price}
+                pintsLeft={kombucha.pintsLeft}/>
+              )}
+
     </div>
   );
+}
 }
 
 KombuchaList.propTypes = {

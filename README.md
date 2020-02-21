@@ -1,5 +1,7 @@
 # _Ganesha Kombucha_
 
+
+
 #### _This is an application for a kombucha shop that has pages and routes for showing a list of kombuchas, adding kombuchas, editing kombuchas, and learning about the company._
 
 #### By _**Josh Forman**_
@@ -20,7 +22,7 @@ _https://github.com/JPForman/Ganesha-Kambucha.git_
 
 * _$ npm run start (browser will open to localhost:3000)_  
 
-  
+
 
 ## Routes
 

@@ -1,23 +1,10 @@
 import React from "react";
 import Kombucha from "./Kombucha";
+import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
-const masterKombuchaList = [
-  {
-    name: "Shiva's Third Eye",
-    flavor: "Rasberry Honey Lime",
-    price: "$3",
-    pintsLeft: "42"
-  },
-  {
-    name: "Vishnu's Couch",
-    flavor: "Honey Lemon Ginger",
-    price: "$3",
-    pintsLeft: "108"
-  }
 
-];
-
-function KombuchaList(){
+function KombuchaList(props){
   const brewHeaders={
     width: '100%',
     display: 'grid',
@@ -28,17 +15,22 @@ function KombuchaList(){
     fontWeight: 'bold',
   }
 
+  const brews={
+    marginTop: '80px'
+  }
+
   return (
-    <div>
+    <div style={brews}>
       <div style={brewHeaders}>
         <h1>Brew Name</h1>
         <h1>Flavor</h1>
         <h1>Price</h1>
         <h1>Sell a Pint</h1>
-        <h1># of Pints Left</h1>
+        <h1># Pints Left</h1>
       </div>
+      <Link to='./NewKombucha'>Add a Brew</Link>
 
-      {masterKombuchaList.map((kombucha,index) =>
+      {props.kombuchaList.map((kombucha) =>
         <Kombucha
         name={kombucha.name}
         flavor={kombucha.flavor}
@@ -48,5 +40,9 @@ function KombuchaList(){
     </div>
   );
 }
+
+KombuchaList.propTypes = {
+  kombuchaList: PropTypes.array
+};
 
 export default KombuchaList;

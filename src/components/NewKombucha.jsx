@@ -7,10 +7,11 @@ function NewKombucha(props){
   let _name = null;
   let _flavor = null;
   let _price = null;
+  let _pintsLeft = 124;
 
   function handleNewKombuchaFormSubmission(event) {
     event.preventDefault();
-    props.onNewKombuchaCreation({name: _name.value, flavor: _flavor.value, price: _price.value});
+    props.onNewKombuchaCreation({name: _name.value, pintsLeft: _pintsLeft, flavor: _flavor.value, price: _price.value});
     _name.value = '';
     _flavor.value = '';
     _price.value = '';

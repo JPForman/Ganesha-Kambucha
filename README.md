@@ -26,7 +26,7 @@ _https://github.com/JPForman/Ganesha-Kambucha.git_
 
 ## Routes
 
-![routes](./src/components/images/Routes.png)
+![routes](./src/components/images/ComponentDiagram.png)
 
 made at https://www.draw.io/
 

@@ -25,12 +25,12 @@ class KombuchaList extends React.Component{
     this.state = {
       kombuchaList: props.kombuchaList
     }
-    this.sellPint = this.sellPint.bind(this)
   }
 
-    sellPint(){
-      let newPintsLeft = this.kombucha.pintsLeft
-      newPintsLeft -= 1
+
+    handleSellPint(kombucha) {
+      let newPintsLeft = this.state.pintsLeft
+      newPintsLeft -= 1;
       this.setState({pintsLeft: newPintsLeft})
     }
 
@@ -52,16 +52,18 @@ class KombuchaList extends React.Component{
                 name={kombucha.name}
                 flavor={kombucha.flavor}
                 price={kombucha.price}
+
                 pintsLeft={kombucha.pintsLeft}/>
               )}
-
+<button onClick={props.onSellPint}>Sell Pint</button>
     </div>
   );
 }
 }
 
 KombuchaList.propTypes = {
-  kombuchaList: PropTypes.array
+  kombuchaList: PropTypes.array,
+  onSellPint: PropTypes.array
 };
 
 export default KombuchaList;

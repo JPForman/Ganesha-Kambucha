@@ -42,6 +42,7 @@ class App extends React.Component {
             />} />
           <Route exact path="/NewKombucha" render={()=><NewKombucha onNewKombuchaCreation={this.handleAddingNewKombuchaToList} />} />
           <Route exact path="/UpdateKombucha" component={UpdateKombucha} />
+          <Route path="/Kombucha" render={()=><KombuchaList onSellPint={this.handleSellPint} />} /> 
           <Route component={Error404} />
 
         </Switch>

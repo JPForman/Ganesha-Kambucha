@@ -52,10 +52,8 @@ class KombuchaList extends React.Component{
                 name={kombucha.name}
                 flavor={kombucha.flavor}
                 price={kombucha.price}
-
                 pintsLeft={kombucha.pintsLeft}/>
               )}
-<button onClick={props.onSellPint}>Sell Pint</button>
     </div>
   );
 }

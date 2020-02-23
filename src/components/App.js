@@ -25,10 +25,10 @@ class App extends React.Component {
     this.setState({masterKombuchaList: newMasterKombuchaList});
   }
 
-  handleSellPint(props) {
-    let newPintsLeft = this.state.pintsLeft
-    newPintsLeft -= 1;
-    this.setState({pintsLeft: newPintsLeft})
+  handleSellPint() {
+    let updatedKombucha = this.state.Kombucha
+    updatedKombucha.pintsLeft -= 1;
+    this.setState({pintsLeft: updatedKombucha.pintsLeft})
   }
 
   render(){
@@ -42,7 +42,7 @@ class App extends React.Component {
             />} />
           <Route exact path="/NewKombucha" render={()=><NewKombucha onNewKombuchaCreation={this.handleAddingNewKombuchaToList} />} />
           <Route exact path="/UpdateKombucha" component={UpdateKombucha} />
-          <Route path="/Kombucha" render={()=><KombuchaList onSellPint={this.handleSellPint} />} /> 
+          <Route path="/Kombucha" render={()=><KombuchaList onSellPint={this.handleSellPint} />} />
           <Route component={Error404} />
 
         </Switch>

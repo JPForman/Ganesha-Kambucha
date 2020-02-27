@@ -8,7 +8,7 @@
 
 ## Description
 
-_This is an application for a kombucha shop that has pages and routes for showing a list of kombuchas, adding kombuchas, editing kombuchas, and learning about the company._
+_This is an application for a kombucha shop that has pages and routes for showing a list of kombuchas with a set of attributes(flavor, cost, and amount left in keg), adding kombuchas, and learning about the company._
 
 _https://github.com/JPForman/Ganesha-Kambucha.git_
 
@@ -39,7 +39,7 @@ made at https://www.draw.io/
 
 ## Known Bugs
 
-_Needs creation an updating functionality_
+_Needs sellPint button to work_
 
 _Needs about me stubs_
 

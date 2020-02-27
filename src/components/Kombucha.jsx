@@ -45,11 +45,11 @@ class Kombucha extends React.Component{
   return (
       <div style={propRow}>
         <div>
-          <h2><em>{this.state.name}</em></h2>
+          <h2><em>{this.props.name}</em></h2>
           <Link to='/UpdateKombucha' style={editLink}>edit the brew</Link>
         </div>
-        <p style={prop}>{this.state.flavor}</p>
-        <p style={prop}><em>{this.state.price}</em></p>
+        <p style={prop}>{this.props.flavor}</p>
+        <p style={prop}><em>{this.props.price}</em></p>
         <button style={sellButton} onClick={this.handleSellPint}>Sell Pint</button>
         <p style={prop}>{this.state.pintsLeft}</p>
         <hr/>

@@ -1,0 +1,41 @@
+.brewCard{
+  font-family: fantasy;
+  font-size: 5vh;
+}
+
+.brewFull{
+vertical-align: middle;
+height: 100%;
+}
+
+.brewNameDiv{
+  position: relative;
+  top: 10%;
+}
+
+.brewFlavorDiv{
+  position: relative;
+  bottom: 20%;
+}
+
+.brewPriceDiv{
+  position: relative;
+  bottom: 20%;
+}
+
+.brewPintsDiv{
+  position: relative;
+  bottom: 20%;
+}
+
+.brewButton{
+  width: 40%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+.brewButtonDiv{
+  position: relative;
+  top: 20%;
+
+}

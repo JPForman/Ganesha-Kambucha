@@ -28,11 +28,11 @@ class KombuchaList extends React.Component{
   }
 
 
-    handleSellPint(kombucha) {
-      let newPintsLeft = this.state.pintsLeft
-      newPintsLeft -= 1;
-      this.setState({pintsLeft: newPintsLeft})
-    }
+  handleSellPint(kombucha) {
+    let newPintsLeft = this.state.pintsLeft
+    newPintsLeft -= 1;
+    this.setState({pintsLeft: newPintsLeft})
+  }
 
   render(props){
 

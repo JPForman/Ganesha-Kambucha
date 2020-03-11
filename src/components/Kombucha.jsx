@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import {Link} from 'react-router-dom';
 import KombuchaList from './KombuchaList';
+import './Kombucha.css';
 
 const propRow={
   display: 'grid',
@@ -10,6 +11,7 @@ const propRow={
   border: '2px solid black',
   margin: '5px',
   borderRadius: '5px',
+
 }
 
 const editLink={
@@ -43,15 +45,25 @@ class Kombucha extends React.Component{
 
   render(props){
   return (
-      <div style={propRow}>
-        <div>
-          <h2><em>{this.props.name}</em></h2>
-          <Link to='/UpdateKombucha' style={editLink}>edit the brew</Link>
+      <div style={propRow} className='brewFull'>
+        <div className='brewNameDiv'>
+          <p className='brewCard'>{this.props.name}</p>
         </div>
-        <p style={prop}>{this.props.flavor}</p>
-        <p style={prop}><em>{this.props.price}</em></p>
-        <button style={sellButton} onClick={this.handleSellPint}>Sell Pint</button>
-        <p style={prop}>{this.state.pintsLeft}</p>
+
+        <div className='brewFlavorDiv'>
+          <p className='brewCard' style={prop}>{this.props.flavor}</p>
+        </div>
+        <div className='brewPriceDiv'>
+          <p className='brewCard' style={prop}><em>{this.props.price}</em></p>
+        </div>
+
+        <div className='brewButtonDiv'>
+          <button className='brewButton' style={sellButton} onClick={this.handleSellPint}>Sell Pint</button>
+        </div>
+
+        <div className='brewPintsDiv'>
+          <p className='brewCard' style={prop}>{this.state.pintsLeft}</p>
+        </div>
         <hr/>
       </div>
   );

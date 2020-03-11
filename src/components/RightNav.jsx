@@ -17,11 +17,11 @@ function RightNav(){
   return(
     <div className="nav">
       <div style={navLink}>
-        <Link to='/home' style={link}>LogIn</Link>
+        <Link to='/' style={link}>LogIn</Link>
       </div>
 
       <div style={navLink}>
-        <Link to='/aboutUs' style={link}>SignUp</Link>
+        <Link to='/' style={link}>SignUp</Link>
       </div>
 
     </div>

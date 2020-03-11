@@ -24,7 +24,7 @@ function LeftNav(){
           </div>
 
           <div style={navLink}>
-            <Link to='/aboutUs' style={link}>About us</Link>
+            <Link to='/' style={link}>About us</Link>
           </div>
 
         </tr>

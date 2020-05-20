@@ -4,25 +4,25 @@ import {Link} from 'react-router-dom';
 
 function RightNav(){
 
-  const navLink= {
-    float: 'right',
-    margin: '5px'
-  }
-  const link= {
-    color: 'black',
-    textShadow: '1px 1px darkgrey',
-    fontWeight: 'bold'
-  }
+  // const navLink= {
+  //   float: 'right',
+  //   margin: '5px'
+  // }
+  // const link= {
+  //   color: 'black',
+  //   textShadow: '1px 1px darkgrey',
+  //   fontWeight: 'bold'
+  // }
 
   return(
     <div className="nav">
-      <div style={navLink}>
+      {/* <div style={navLink}>
         <Link to='/' style={link}>LogIn</Link>
       </div>
 
       <div style={navLink}>
         <Link to='/' style={link}>SignUp</Link>
-      </div>
+      </div> */}
 
     </div>
   );

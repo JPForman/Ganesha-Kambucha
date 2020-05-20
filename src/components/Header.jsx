@@ -13,7 +13,7 @@ function Header(){
         <LeftNav />
       </div>
 
-      <div className='logo'>
+      <div className='centerLogo'>
         <Logo />
       </div>
 

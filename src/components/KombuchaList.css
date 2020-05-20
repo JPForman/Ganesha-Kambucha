@@ -1,0 +1,18 @@
+.brewHeaders{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  text-align: center;
+  background-color: #ace3af;
+  font-family: fantasy;
+  font-weight: bold;
+}
+
+.brewGrid{
+  margin-top: 6%;
+}
+
+.newBrew{
+  /* margin-top: 100px; */
+  border: 2px solid black;
+}

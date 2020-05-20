@@ -4,20 +4,20 @@ import {Link} from 'react-router-dom';
 
 function LeftNav(){
 
-  const navLink= {
-    float: 'left',
-    margin: '5px',
-    color: 'red'
-  }
-  const link= {
-    color: 'black',
-    textShadow: '1px 1px darkgrey',
-    fontWeight: 'bold'
-  }
+  // const navLink= {
+  //   float: 'left',
+  //   margin: '5px',
+  //   color: 'red'
+  // }
+  // const link= {
+  //   color: 'black',
+  //   textShadow: '1px 1px darkgrey',
+  //   fontWeight: 'bold'
+  // }
 
   return(
     <div>
-      <table className="nav-links">
+      {/* <table className="nav-links">
         <tr>
           <div style={navLink}>
             <Link to='/' style={link}>Home</Link>
@@ -28,7 +28,7 @@ function LeftNav(){
           </div>
 
         </tr>
-      </table>
+      </table> */}
     </div>
   );
 }

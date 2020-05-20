@@ -9,7 +9,8 @@
 }
 
 .brewGrid{
-  margin-top: 6%;
+  position: relative;
+  margin-top: 22vh;
 }
 
 .newBrew{

@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
+import './NewKombucha.css';
 
 function NewKombucha(props){
   let _name = null;
@@ -18,57 +19,40 @@ function NewKombucha(props){
     props.history.push('/')
   }
 
-  const updateTitle= {
-  }
-
-  const updateTitleRow={
-    display: 'grid',
-    gridTemplateColumns: 'auto auto auto'
-  }
-
-  const update={
-  }
-
-  const updateBody={
-    marginTop: '100px',
-  }
-
-  const updateRow={
-    display: 'grid',
-    gridTemplateColumns: 'auto auto auto',
-  }
-
   return(
-    <div style={updateBody}>
-      <h1 className="logo">New Kombucha Page</h1>
+    <div className='updateBody'>
+      <h1 className="newTitle">Tap A Keg!</h1>
 
-        <div style={updateTitleRow}>
-          <p style={updateTitle}>Name</p>
-          <p style={updateTitle}>Flavor</p>
-          <p style={updateTitle}>Price</p>
+        <div className='updateTitleRow'>
+          <p className='updateTitle'>Name</p>
+          <p className='updateTitle'>Flavor</p>
+          <p className='updateTitle'>Price</p>
         </div>
         <form onSubmit={handleNewKombuchaFormSubmission}>
-        <div style={updateRow}>
+        <div className='updateRow'>
           <input
-            style={update}
+            className='update'
             type='text'
             id='name'
             placeholder='Name of Kombucha'
+            required
             ref={(input) => {_name = input;}}/>
           <input
-            style={update}
+            className='update'
             type='text'
             id='flavor'
             placeholder='Flavor'
+            required
             ref={(input) => {_flavor = input;}}/>
           <input
-            style={update}
+            className='update'
             type='text'
             id='price'
             placeholder='Price'
+            required
           ref={(input) => {_price = input;}}/>
           </div>
-          <button type='submit'>Add the Buch!</button>
+          <button type='submit' className='buchButton'>Add the Buch!</button>
 
         </form>
       </div>

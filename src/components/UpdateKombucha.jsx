@@ -17,7 +17,6 @@ function UpdateKombucha(){
   }
 
   const subTitle={
-    fontFamily: 'fantasy',
   }
 
   const updateRow={
@@ -31,7 +30,7 @@ function UpdateKombucha(){
 
   return(
     <div style={updateBody}>
-      <h1 style={subTitle}>Update Kombucha Page</h1>
+      <h1 style={subTitle}>Tap A Keg Of Brew</h1>
 
         <div style={updateTitleRow}>
           <p style={updateTitle}>Name</p>

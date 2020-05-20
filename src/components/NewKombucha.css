@@ -1,0 +1,32 @@
+.buchButton{
+  margin-top: 20px;
+}
+
+.newTitle{
+  text-align: center;
+  background-color:#ace3af;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.update{
+  width: 80%;
+  /* text-align: center; */
+}
+
+.updateTitleRow{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.updateBody{
+  padding: 10px;
+  position: relative;
+  margin-top: 18vh;
+  /* text-align: center; */
+}
+
+.updateRow{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

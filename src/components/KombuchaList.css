@@ -4,7 +4,6 @@
   grid-template-columns: 20% 20% 20% 20% 20%;
   text-align: center;
   background-color: #ace3af;
-  font-family: fantasy;
   font-weight: bold;
 }
 
@@ -14,7 +13,8 @@
 
 .brewGrid{
   position: relative;
-  margin-top: 22vh;
+  margin-top: 20vh;
+  background-color: ivory;
 }
 
 .newBrew{

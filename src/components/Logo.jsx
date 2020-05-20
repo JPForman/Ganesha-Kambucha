@@ -4,7 +4,8 @@ import './Logo.css';
 
 function Logo(){
   const icon={
-    height: '15vh',
+    marginTop: '-4vh',
+    height: '18vh',
     // marginTop: '20px',
     position: 'absolute',
     verticalAlign: 'middle',

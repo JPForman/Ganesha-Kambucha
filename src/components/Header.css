@@ -14,7 +14,6 @@
   top: 1%;
   left: 1%;
   position: fixed;
-  font-family: fantasy;
 }
 
 .logoLink{
@@ -24,7 +23,6 @@
 .centerLogo {
   color: gold;
   /* padding-top: 5px; */
-  font-family: fantasy;
   font-weight: bold;
   font-size: 4vh;
   text-align: center;
@@ -35,7 +33,6 @@
   top: 1%;
   right: 1%;
   position: fixed;
-  font-family: fantasy;
 }
 
 

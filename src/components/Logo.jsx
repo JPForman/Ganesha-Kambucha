@@ -12,6 +12,7 @@ function Logo(){
   }
 
   const title={
+    textDecoration: 'none',
     // marginTop: "-100px"
   }
 

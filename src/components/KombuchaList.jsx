@@ -13,7 +13,7 @@ class KombuchaList extends React.Component{
       kombuchaList: props.kombuchaList
     }
   }
-  
+
   handleSellPint(kombucha) {
     let newPintsLeft = this.state.pintsLeft
     newPintsLeft -= 1;
@@ -32,7 +32,7 @@ class KombuchaList extends React.Component{
         </div>
 
         <div className='newBrew'>
-          <Link to='./NewKombucha'>Add a Brew</Link>
+          <Link to='./NewKombucha' className='newText'>Add a Brew</Link>
         </div>
 
           {this.state.kombuchaList.map((kombucha) =>

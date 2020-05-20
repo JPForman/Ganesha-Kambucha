@@ -17,6 +17,10 @@
   font-family: fantasy;
 }
 
+.logoLink{
+  text-decoration: none;
+}
+
 .centerLogo {
   color: gold;
   /* padding-top: 5px; */

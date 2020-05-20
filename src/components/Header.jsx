@@ -13,9 +13,11 @@ function Header(){
         <LeftNav />
       </div>
 
-      <div className='centerLogo'>
-        <Logo />
-      </div>
+      <Link to='/' className='logoLink'>
+        <div className='centerLogo'>
+          <Logo />
+        </div>
+      </Link>
 
       <div className='rightNav'>
         <RightNav />
